@@ -1,0 +1,58 @@
+
+@import 'global';
+
+.navbar{
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  .right-nav{
+    .nav-link{
+      font-size: 13px !important;
+      border-radius: 8px;
+      background-color: $primary_color;
+      color: white !important;
+    }
+  }
+  .navbar-brand{
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    span:first-child{
+      color: $primary_color;
+      position: relative;
+      z-index: -1;
+      font-weight: bold;
+      letter-spacing: -1px;
+      width: 16px;
+      display: inline-block;
+      transition: 0.7s ease-in-out;
+    }
+    span:last-child{
+      color: $secondary_color;
+      font-weight: 400;
+      background-color: white;
+    }
+    &:hover > span:first-child{
+      width: 55px;
+    }
+    @media screen and (max-width:700px) {
+      
+    }
+  
+  }
+  .navbar-nav {
+    .nav-item .nav-link{
+      font-size: 1.1rem;
+      margin-left: 10px;
+      color: $primary_color;
+    }
+    .nav-item.active {
+      .nav-link{
+        color: $secondary_color;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+

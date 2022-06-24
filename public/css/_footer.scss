@@ -1,0 +1,19 @@
+@import 'global';
+footer {
+  .footer-brand {
+    text-decoration: none;
+    font-size: 1.4rem;
+    span:first-child {
+      color: $primary_color;
+      font-weight: bold;
+      display: inline-block;
+    }
+    span:last-child {
+      color: $secondary_color;
+      font-weight: 400;
+    }
+  }
+  .fab{
+    color: $primary_color;
+  }
+}

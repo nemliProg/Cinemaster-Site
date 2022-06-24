@@ -1,0 +1,29 @@
+@import 'global';
+.content{
+  background: center / cover url(../img/rick-and-morty_a6e6_1680x1050.jpg);
+  padding: 3rem;
+  .form-title{
+    color: $primary-color;
+    font-weight: bold;
+  }
+  .form-desc{
+    color: $secondary-color;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  form{
+    background-color: $primary-color;
+    backdrop-filter: opacity(0.2);
+    border-radius: 10px;
+    .form-group{
+      margin:15px 0px;
+      input{
+        border-radius: 20px;
+        font-size: medium;
+      }
+    }
+    .btn-login{
+      background-color: #e493e4;
+    }
+  }
+}

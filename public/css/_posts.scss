@@ -1,0 +1,68 @@
+@import 'global';
+.postContainer{
+  width: 50%;
+}
+.postImage{
+  width: 100%;
+}
+.card-body{
+  background-color: rgb(182, 182, 182);
+  outline: none !important;
+  border: none !important;
+  border-radius: 10px;
+  input {
+    border-radius: 15px;
+  }
+  input[type="submit"]{
+    background-color: darkblue;
+  }
+}
+.impression{
+  div{
+    .like{
+        color: rgb(255, 49, 100);
+      }
+      .comment{
+        color: rgb(100, 100, 211);
+      }
+      font-size: 15px;
+      i{
+        font-size: 20px;
+      }
+    }   
+  }
+.comments{
+  padding: 0px;
+  
+  .comment{
+    margin: 4px 0px !important;
+    background-color: rgb(100, 100, 211);;
+    border-radius: 5px;
+    padding: 5px;
+    color: white !important;
+    p{
+      font-size: 14px;
+      margin: 0px !important;
+      padding: 0px 0px 2px 5px;
+    }
+    .date{
+      font-size: 10px;
+    }
+
+  }
+}
+@media screen and (max-width:767px) {
+  .postContainer{
+    width: 100%;
+  }
+}
+.ope{
+  padding: 0px !important;
+  &.edit{
+    color: red !important;
+  }
+  &.delete{
+    color: rgb(81, 81, 190) !important;
+    padding-left: 5px !important;
+  }
+}
